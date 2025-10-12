@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2025 Rubeebeebee
+# SPDX-FileCopyrightText: 2025 starch
+# SPDX-FileCopyrightText: 2025 tonotom
+# SPDX-FileCopyrightText: 2025 tonotom1
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub:Archylle
+# Discord:Archylle
+
+# Shuttle Notes:
+#Merc ship
+
+- type: vessel
+  id: Broadsword
+  parent: BaseVessel
+  name: AIC Broadsword
+  description: A venerable broadside combat ship built by Aegis Interstellar Command for sustained line engagements. Though its design shows its age, recent field modifications have restored its bite, making it a reliable platform for mercenaries who favor flanking firepower.
+  price: 200000 # Big gun tax
+  category: Large
+  group: Shipyard
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/broadsword.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Broadsword
+  mapName: 'AIC Broadsword'
+  mapPath: /Maps/_Mono/Shuttles/broadsword.yml
+  minPlayers: 0
+  stations:
+    Broadsword:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Broadsword MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
