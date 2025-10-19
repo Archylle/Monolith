@@ -62,6 +62,7 @@
         Slash: 4
         Piercing: 1
   - type: Speech
+    speechVerb: Felinid
     speechSounds: Alto
     allowedEmotes:
     - Hiss
