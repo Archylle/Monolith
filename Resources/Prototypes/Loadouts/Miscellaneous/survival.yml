@@ -29,6 +29,7 @@
     - Reptilian
     - Protogen
     - Yowie # Goobstation
+    - Tajaran # Goobstation
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
